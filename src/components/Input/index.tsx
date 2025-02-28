@@ -6,6 +6,7 @@ type Props = {
   name: string
   label?: string
   value?: string
+  type?: "text" | "email"
 }
 export const Input = ({
   onChange,
@@ -13,6 +14,7 @@ export const Input = ({
   name,
   label,
   value,
+  type = "text",
 }: Props) => {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) =>
     onChange(e.target.value)
@@ -22,7 +24,7 @@ export const Input = ({
       {label && <Label label={label} />}
       <StyledInput
         value={value}
-        type="text"
+        type={type}
         placeholder={placeholder}
         onChange={handleChange}
         id={name}

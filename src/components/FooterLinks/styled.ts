@@ -8,3 +8,11 @@ export const StyledFooterLinks = styled.div`
   gap: 2.5rem;
   width: 50%;
 `
+
+export const NewsLetterContainer = styled.div`
+  display: flex;
+  flex-flow: column wrap;
+  gap: 2.5rem;
+  padding: 0;
+  margin: 0;
+`

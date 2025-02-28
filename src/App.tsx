@@ -11,9 +11,9 @@ function App() {
     <Routes>
       <Route element={<MainLayout />}>
         <Route path={APP_ROUTES.HOME} element={<Home />} />
-        <Route path="/" element={<NavBar />} />
-        <Route path={APP_ROUTES.FORM} element={<App />} />
         <Route path={APP_ROUTES.FILTERS} element={<Rating rate={0} />} />
+        <Route path={APP_ROUTES.FORM} element={<App />} />
+        <Route path="/" element={<NavBar />} />
       </Route>
     </Routes>
   )

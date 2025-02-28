@@ -55,4 +55,5 @@ export const BaseButton = styled.button<BaseProps>`
   font-family: ${({ theme }) => theme.text.fontFamily};
   /* font-size: 1.5rem; */
   font-weight: bold;
+  cursor: pointer;
 `
