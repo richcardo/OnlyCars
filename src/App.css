@@ -1,0 +1,11 @@
+#root {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: start;
+  background-color: #eeeeee;
+  font-family: Alpino;
+}
+
+* {
+  margin: 0;
+}
