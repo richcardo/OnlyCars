@@ -1,3 +1,4 @@
+import { Icon } from "../components/Icon/"
 import { Select } from "../components/SelectionFilter"
 import { Vehicle } from "../components/Vehicle"
 
@@ -236,9 +237,33 @@ export const FOOTER_LINKS = [
         path: "",
       },
       {
-        label: "invite a Friend",
+        label: "Invite a Friend",
         path: "",
       },
     ],
+  },
+]
+
+export type Social = {
+  icon: Icon
+  path: string
+}
+
+export const social_links: Social[] = [
+  {
+    icon: "facebook",
+    path: "/",
+  },
+  {
+    icon: "x",
+    path: "/",
+  },
+  {
+    icon: "linkedIn",
+    path: "/",
+  },
+  {
+    icon: "instagram",
+    path: "/",
   },
 ]

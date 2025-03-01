@@ -3,8 +3,9 @@ import { StyledImg } from "./styled"
 type ImageProps = {
   imgUrl: string
   size?: Size
+  className?: string
 }
 
-export const Image = ({ imgUrl, size = "medium" }: ImageProps) => {
-  return <StyledImg size={size} src={imgUrl} />
+export const Image = ({ imgUrl, size = "medium", className }: ImageProps) => {
+  return <StyledImg className={className} size={size} src={imgUrl} />
 }

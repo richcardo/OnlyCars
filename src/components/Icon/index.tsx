@@ -23,6 +23,12 @@ import {
   faStarHalfStroke,
   faDotCircle,
 } from "@fortawesome/free-regular-svg-icons"
+import {
+  faFacebook,
+  faInstagram,
+  faXTwitter,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons"
 import { SizeProp } from "@fortawesome/fontawesome-svg-core"
 
 export type Icon = keyof typeof icons
@@ -54,6 +60,10 @@ const icons = {
   star: faStar,
   shield: faShield,
   halfStar: faStarHalfStroke,
+  facebook: faFacebook,
+  instagram: faInstagram,
+  x: faXTwitter,
+  linkedIn: faLinkedin,
 }
 
 export const Icon = ({ color = "grey", icon, size, className }: Props) => {

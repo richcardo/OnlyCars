@@ -7,4 +7,10 @@ export const StyledLinksList = styled.ul`
   gap: 2.5rem;
   padding: 0;
   margin: 0;
+  & button {
+    padding: 0;
+    font-weight: lighter;
+    font-size: large;
+    aspect-ratio: 0;
+  }
 `

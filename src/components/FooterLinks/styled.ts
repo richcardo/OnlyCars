@@ -6,7 +6,8 @@ export const StyledFooterLinks = styled.div`
   align-items: start;
   flex-flow: row wrap;
   gap: 2.5rem;
-  width: 50%;
+  flex: 1.5;
+  z-index: 1;
 `
 
 export const NewsLetterContainer = styled.div`

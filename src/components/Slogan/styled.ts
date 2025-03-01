@@ -3,8 +3,8 @@ import styled from "@emotion/styled"
 export const StyledSlogan = styled.div`
   display: flex;
   flex-flow: column wrap;
-  width: 30%;
+  flex: 1;
   & .text {
-    line-height: 3rem;
+    line-height: 4rem;
   }
 `

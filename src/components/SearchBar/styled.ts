@@ -11,4 +11,7 @@ export const StyledSearchBar = styled.div`
   padding: 0 0.6rem;
   gap: 10px;
   height: ${({ theme }) => `${theme.sizes.small}px`};
+  & input {
+    background-color: transparent;
+  }
 `
