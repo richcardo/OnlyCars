@@ -34,7 +34,7 @@ export const Main = () => {
       {imgs.map((path) => {
         return (
           <ListImageContainer
-            onClick={(e) => setCurrImg(e.target.attributes.src.nodeValue)}
+            onClick={() => setCurrImg(path)}
             className={currImg === path ? "selected" : undefined}
           >
             <Image imgUrl={path} />
