@@ -6,9 +6,11 @@ type Props = {
   name: string
   label?: string
   value?: string
-  type?: "text" | "email"
+  type?: "text" | "email" | "password"
+  backgroundShade?: 50 | 300 | 400 | 950
 }
 export const Input = ({
+  backgroundShade = 300,
   onChange,
   placeholder = "",
   name,
@@ -23,6 +25,7 @@ export const Input = ({
     <StyledDiv>
       {label && <Label label={label} />}
       <StyledInput
+        backgroundShade={backgroundShade}
         value={value}
         type={type}
         placeholder={placeholder}

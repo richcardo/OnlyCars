@@ -16,7 +16,7 @@ export const LinksList = ({ link }: Props) => {
 
       {link.items.map(({ label, path }) => {
         return (
-          <li>
+          <li key={label}>
             <Button variant="text" color="grey" onClick={() => navigate(path)}>
               {label}
             </Button>

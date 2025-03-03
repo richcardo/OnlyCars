@@ -14,6 +14,7 @@ export const SocialLinks = ({ links }: Props) => {
       {links.map(({ icon, path }) => {
         return (
           <IconButton
+            key={icon}
             variant="outlined"
             color="muted"
             iconSize="xl"

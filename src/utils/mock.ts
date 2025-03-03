@@ -10,17 +10,18 @@ export const vehicles: Vehicle[] = [
     image:
       "https://img.freepik.com/psd-gratis/auto-isolata-rossa_23-2151852884.jpg?t=st=1740667672~exp=1740671272~hmac=c83272cfc6937c2e466bddb432d4b1b754d0855283e1697285db90583b50e054&w=1380",
     isLiked: true,
-    tags: [
+    rate: 4,
+    technicalData: [
       {
-        label: "fuel",
+        label: "gasoline",
         content: "80L",
       },
       {
-        label: "shifts",
+        label: "steering",
         content: "Manual",
       },
       {
-        label: "people",
+        label: "capacity",
         content: "3",
       },
     ],
@@ -35,17 +36,18 @@ export const vehicles: Vehicle[] = [
     image:
       "https://img.freepik.com/psd-gratis/auto-isolata-rossa_23-2151852884.jpg?t=st=1740667672~exp=1740671272~hmac=c83272cfc6937c2e466bddb432d4b1b754d0855283e1697285db90583b50e054&w=1380",
     isLiked: false,
-    tags: [
+    rate: 4.5,
+    technicalData: [
       {
-        label: "fuel",
+        label: "gasoline",
         content: "70L",
       },
       {
-        label: "shifts",
+        label: "steering",
         content: "Manual",
       },
       {
-        label: "people",
+        label: "capacity",
         content: "2",
       },
     ],
@@ -59,17 +61,18 @@ export const vehicles: Vehicle[] = [
     image:
       "https://img.freepik.com/psd-gratis/auto-isolata-rossa_23-2151852884.jpg?t=st=1740667672~exp=1740671272~hmac=c83272cfc6937c2e466bddb432d4b1b754d0855283e1697285db90583b50e054&w=1380",
     isLiked: true,
-    tags: [
+    rate: 4.5,
+    technicalData: [
       {
-        label: "fuel",
+        label: "gasoline",
         content: "80L",
       },
       {
-        label: "shifts",
+        label: "steering",
         content: "Manual",
       },
       {
-        label: "people",
+        label: "capacity",
         content: "3",
       },
     ],
@@ -84,17 +87,18 @@ export const vehicles: Vehicle[] = [
     image:
       "https://img.freepik.com/psd-gratis/auto-isolata-rossa_23-2151852884.jpg?t=st=1740667672~exp=1740671272~hmac=c83272cfc6937c2e466bddb432d4b1b754d0855283e1697285db90583b50e054&w=1380",
     isLiked: false,
-    tags: [
+    rate: 4.5,
+    technicalData: [
       {
-        label: "fuel",
+        label: "gasoline",
         content: "70L",
       },
       {
-        label: "shifts",
+        label: "steering",
         content: "Manual",
       },
       {
-        label: "people",
+        label: "capacity",
         content: "2",
       },
     ],
@@ -106,20 +110,21 @@ export const vehicles: Vehicle[] = [
     carID: "5",
     name: "Konisegg",
     type: "sport",
+    rate: 4.5,
     image:
       "https://img.freepik.com/psd-gratis/auto-isolata-rossa_23-2151852884.jpg?t=st=1740667672~exp=1740671272~hmac=c83272cfc6937c2e466bddb432d4b1b754d0855283e1697285db90583b50e054&w=1380",
     isLiked: true,
-    tags: [
+    technicalData: [
       {
-        label: "fuel",
+        label: "gasoline",
         content: "80L",
       },
       {
-        label: "shifts",
+        label: "steering",
         content: "Manual",
       },
       {
-        label: "people",
+        label: "capacity",
         content: "3",
       },
     ],
@@ -128,23 +133,24 @@ export const vehicles: Vehicle[] = [
     discountedPrice: 80,
   },
   {
-    carID: "",
+    carID: "6",
     name: "Nissan GT-R",
     type: "sport",
     image:
       "https://img.freepik.com/psd-gratis/auto-isolata-rossa_23-2151852884.jpg?t=st=1740667672~exp=1740671272~hmac=c83272cfc6937c2e466bddb432d4b1b754d0855283e1697285db90583b50e054&w=1380",
     isLiked: false,
-    tags: [
+    rate: 4.5,
+    technicalData: [
       {
-        label: "fuel",
+        label: "gasoline",
         content: "70L",
       },
       {
-        label: "shifts",
+        label: "steering",
         content: "Manual",
       },
       {
-        label: "people",
+        label: "capacity",
         content: "2",
       },
     ],

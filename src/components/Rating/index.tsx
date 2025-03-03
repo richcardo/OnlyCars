@@ -16,7 +16,7 @@ type ItemProps = RatingProps & {
 const Star = ({ setRate, rate, value, hover, setHover }: ItemProps) => {
   const { icon, color } = chooseIcon(value, hover, rate, !!setRate)
   const roundRate = (rate: number) => {
-    return rate % 1 < 0.5 ? value - 0.5 : value
+    return rate % 1 >= 0.5 ? value - 0.5 : value
   }
   const [mouseX, setMouseX] = useState(0)
   const starWidth = document.getElementById(`star${value}`)?.offsetWidth ?? 30
@@ -25,7 +25,7 @@ const Star = ({ setRate, rate, value, hover, setHover }: ItemProps) => {
     <StyledStar
       onMouseMove={(e) => {
         setMouseX(e.clientX)
-        setHover(mouseX / starWidth)
+        setHover(roundRate(mouseX / starWidth))
       }}
       onMouseLeave={() => setHover(0)}
       onClick={() =>
@@ -33,7 +33,7 @@ const Star = ({ setRate, rate, value, hover, setHover }: ItemProps) => {
       }
       id={`star${value}`}
     >
-      <Icon icon={icon} color={color} size="10x" />
+      <Icon icon={icon} color={color} size="2x" />
     </StyledStar>
   )
 }

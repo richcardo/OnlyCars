@@ -10,6 +10,7 @@ export const StyledDiv = styled.div`
   display: flex;
   justify-content: start;
   align-items: center;
+  width: min-content;
 `
 
 // export const StyledRating = styled.div<{ value: number }>`

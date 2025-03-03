@@ -5,14 +5,16 @@ import { StyledVehicle, VehicleFooter } from "./styled"
 import { Like } from "../Like"
 import { Price } from "../Price"
 import { Button } from "../Button"
+import { useNavigate } from "react-router"
 
 export type Vehicle = {
   carID: string
   name: string
   type: string
+  rate: number
   image: string
   isLiked: boolean
-  tags: Tag[]
+  technicalData: Tag[]
   pricePerDay: number
   isDiscounted: boolean
   discountedPrice?: number
@@ -24,6 +26,7 @@ type VehicleProps = {
 
 export const Vehicle = ({ vehicle }: VehicleProps) => {
   const [isLiked, setLiked] = useState(vehicle.isLiked)
+  const navigate = useNavigate()
   return (
     <StyledVehicle>
       <SectionHeader
@@ -32,7 +35,7 @@ export const Vehicle = ({ vehicle }: VehicleProps) => {
         subtitle={vehicle.type}
       />
       <img src={vehicle.image} />
-      <Tags tags={vehicle.tags} />
+      <Tags technicalData={vehicle.technicalData} />
       <VehicleFooter>
         <Price
           discountedPrice={
@@ -42,7 +45,10 @@ export const Vehicle = ({ vehicle }: VehicleProps) => {
             vehicle.isDiscounted ? vehicle.discountedPrice : vehicle.pricePerDay
           }
         />
-        <Button className="rent" onClick={() => console.log("ciao")}>
+        <Button
+          className="rent"
+          onClick={() => navigate(`/cars/${vehicle.carID}`)}
+        >
           Rent now
         </Button>
       </VehicleFooter>

@@ -12,7 +12,7 @@ export const FooterLinks = ({ footerLinks }: Props) => {
   return (
     <StyledFooterLinks>
       {footerLinks.map((link) => {
-        return <LinksList link={link} />
+        return <LinksList key={link.label} link={link} />
       })}
       <NewsLetterContainer>
         <Text variant="h4">Newsletter</Text>
