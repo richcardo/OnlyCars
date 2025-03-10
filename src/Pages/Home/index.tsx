@@ -7,11 +7,13 @@ import {
 } from "../../utils/mock"
 import { CarsSection } from "../../components/CarsSection"
 import { FilterSelect } from "../../components/FilterSelect"
+import { apiClient } from "../../api/apiClient"
 
 export const Home = () => {
   const [cars, setCars] = useState<Cars>([])
   useEffect(() => {
     setCars(mockCars)
+    apiClient.get("cars").then((res) => console.log(res))
   }, [])
   return (
     <StyledHome>

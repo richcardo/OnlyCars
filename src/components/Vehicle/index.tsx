@@ -16,8 +16,7 @@ export type Vehicle = {
   isLiked: boolean
   technicalData: Tag[]
   pricePerDay: number
-  isDiscounted: boolean
-  discountedPrice?: number
+  discount: number
 }
 
 type VehicleProps = {
@@ -37,14 +36,7 @@ export const Vehicle = ({ vehicle }: VehicleProps) => {
       <img src={vehicle.image} />
       <Tags technicalData={vehicle.technicalData} />
       <VehicleFooter>
-        <Price
-          discountedPrice={
-            vehicle.isDiscounted ? vehicle.pricePerDay : undefined
-          }
-          price={
-            vehicle.isDiscounted ? vehicle.discountedPrice : vehicle.pricePerDay
-          }
-        />
+        <Price discount={vehicle.discount} price={vehicle.pricePerDay} />
         <Button
           className="rent"
           onClick={() => navigate(`/cars/${vehicle.carID}`)}

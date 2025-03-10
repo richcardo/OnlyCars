@@ -25,9 +25,8 @@ export const vehicles: Vehicle[] = [
         content: "3",
       },
     ],
-    pricePerDay: 100.0,
-    isDiscounted: true,
-    discountedPrice: 80.0,
+    pricePerDay: 100,
+    discount: 20,
   },
   {
     carID: "2",
@@ -51,8 +50,8 @@ export const vehicles: Vehicle[] = [
         content: "2",
       },
     ],
-    pricePerDay: 90.0,
-    isDiscounted: false,
+    pricePerDay: 90,
+    discount: 10,
   },
   {
     carID: "3",
@@ -77,8 +76,7 @@ export const vehicles: Vehicle[] = [
       },
     ],
     pricePerDay: 100,
-    isDiscounted: true,
-    discountedPrice: 80,
+    discount: 0,
   },
   {
     carID: "4",
@@ -103,8 +101,7 @@ export const vehicles: Vehicle[] = [
       },
     ],
     pricePerDay: 90,
-    isDiscounted: false,
-    discountedPrice: 80,
+    discount: 0,
   },
   {
     carID: "5",
@@ -129,8 +126,7 @@ export const vehicles: Vehicle[] = [
       },
     ],
     pricePerDay: 100,
-    isDiscounted: true,
-    discountedPrice: 80,
+    discount: 10,
   },
   {
     carID: "6",
@@ -155,8 +151,7 @@ export const vehicles: Vehicle[] = [
       },
     ],
     pricePerDay: 90,
-    isDiscounted: false,
-    discountedPrice: 80,
+    discount: 0,
   },
 ]
 

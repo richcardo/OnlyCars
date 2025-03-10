@@ -66,14 +66,7 @@ export const CarDetail = ({ vehicle }: CarDetailProp) => {
         ))}
       </TechnicalDataSection>
       <VehicleFooter>
-        <Price
-          discountedPrice={
-            vehicle.isDiscounted ? vehicle.pricePerDay : undefined
-          }
-          price={
-            vehicle.isDiscounted ? vehicle.discountedPrice : vehicle.pricePerDay
-          }
-        />
+        <Price discount={vehicle.discount} price={vehicle.pricePerDay} />
         <Button className="rent" onClick={() => console.log("ciao")}>
           Rent now
         </Button>

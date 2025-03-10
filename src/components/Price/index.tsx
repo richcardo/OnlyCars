@@ -3,24 +3,25 @@ import { Text } from "../Text"
 
 type Props = {
   daily?: "day" | "days"
-  discountedPrice?: number
-  price: number | undefined
+  discount: number
+  price: number
 }
 
-export const Price = ({ daily = "day", discountedPrice, price }: Props) => {
+export const Price = ({ daily = "day", discount, price }: Props) => {
+  const finalPrice = ((100 - discount) / 100) * price
   return (
     <StyledPrice>
       <Text variant="h2">
-        {`$${price}/`}
+        {`$${finalPrice}/`}
         {daily && (
           <Text variant="span" shade={400}>
             {daily}
           </Text>
         )}
       </Text>
-      {discountedPrice && (
+      {discount !== 0 && (
         <Text variant="h3" shade={400} textDecoration="line-through">
-          {`$${discountedPrice}`}
+          {`$${price}`}
         </Text>
       )}
     </StyledPrice>
