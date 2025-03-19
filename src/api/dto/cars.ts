@@ -1,4 +1,4 @@
-type PricePerDay = {
+export type PricePerDay = {
   value: number
   currency: string
 }
